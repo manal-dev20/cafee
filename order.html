@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander votre Café</title>
+    <style>
+        body {
+            background-image: url("timecoffe.jpg");
+            background-repeat: no-repeat;
+            background-size: 1399px;
+        }
+        img {
+            background-repeat: no-repeat;
+            width: 150px;
+            position: absolute;
+            left: 750px;
+            top: 230px;
+            transition: transform 0.3s ease;
+            
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(121, 70, 30);
+            text-align: center;
+            background-color: bisque;
+            transition: transform 0.6s ease;
+        }
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align:right;
+            transition: transform 0.7s ease;
+        }
+        h1:hover, h2:hover {
+    transform: scale(1.1); 
+}
+label:hover, select:hover {
+    transform: scale(1.1); 
+}
+        form {
+         text-align: right;
+            width: 50;
+        }
+        label {
+            font-style: oblique;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            transition: transform 0.7s ease;
+        }
+        button:hover {
+            background-color: bisque;
+            font-size: large;
+        }
+        select {
+            width: 220px; 
+            height: 40px; 
+            font-family: 'Arial', sans-serif; 
+            font-size: 16px;
+            border-radius: 45px;
+            transition: transform 0.7s ease;
+        }
+        input {
+            width: 220px; 
+            height: 40px; 
+            font-family: 'Arial', sans-serif; 
+            font-size: 16px; 
+            border-radius: 45px;
+        }
+
+        .message-confirmation {
+            font-family: 'Verdana', sans-serif;
+            color: #4b3621;
+            background-color: #f8e3c3; 
+            padding: 15px;
+            margin-top: 20px;
+            border: 2px solid #b78d5a;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Commander votre Café</h1><br>
+        </div>
+    </header>
+   
+    <img src="coffee.jpg" width="250px">
+    
+    <h2>Choisissez votre café</h2>
+    <form id="orderForm">
+        <fieldset>
+            <label for="coffeeType">Type de café :</label>
+            <select id="coffeeType" name="coffeeType">
+                <option value="espresso">Espresso</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+            </select><br><br>
+
+            <label for="size">Taille :</label>
+            <select id="size" name="size">
+                <option value="small">Petit</option>
+                <option value="medium">Moyen</option>
+                <option value="large">Grand</option>
+            </select><br><br>
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <button type="submit" 
+
+            >Commander</button>
+        </fieldset>
+    </form>
+    <div id="confirmationMessage" class="message-confirmation" style="display: none;"></div>
+
+
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            
+            const coffeeType = document.getElementById('coffeeType').value;
+            const size = document.getElementById('size').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+
+           
+            const message = `<strong>Merci ${name} !</strong><br>Votre commande :<br>
+                             Type de café : ${coffeeType}<br>
+                             Taille : ${size}<br>
+                             Numéro de téléphone : ${phone}<br><br><i>Votre commande a été reçue.</i>`;
+
+            const confirmationDiv = document.getElementById('confirmationMessage');
+            confirmationDiv.innerHTML = message;
+            confirmationDiv.style.display = 'block';
+        });
+    </script> 
+</body>
+</html>
