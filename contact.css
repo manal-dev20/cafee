@@ -1,0 +1,41 @@
+body {
+    background-image: url("coffee_rorozoa_3_05.jpg");
+    background-size: 149%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+fieldset {
+    width: 40%; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #b78d5a;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    background-color: #ecd7b0;
+}
+
+.contact-item {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-radius: 20px;
+    background-color: #f0eeec;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    background-color: #a7895c;
+}
+.material-icons{
+    font-size: 50px;
+    color: #b78d5a;
+
+}

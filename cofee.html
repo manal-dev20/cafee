@@ -4,84 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="cofee.css">
     <title>Coffee Time</title>
-    <style>
-        body {
-    background-image: url('coo.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height:200vh; 
-    margin: 0; 
-    color: #fff; 
-}
-
-header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-
-nav ul {
-    display: flex; 
-    list-style-type: none; 
-    margin: 0;
-    padding: 60px;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none; 
-    color: #fff; 
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #ddd; 
-}
-
-.fa-coffee {
-    font-size: 24px; 
-    color: #fff; 
-}
-p{
-    text-align: center;
-    position: relative;
-   top: 200px;
-   right: 800px;
-   font-size: x-large;
-   
-}
-button{
-    font-size: large;
-    transition: transform 0.6s ease;
     
-}
-button:hover{
-    transform: scale(1.1); 
-    background-color: bisque;
-    
-}
-.about-section h1{
-            margin: 0; 
-            font-size: 32px; 
-        }
-.about-section p{
-            font-style: oblique;
-            font-size: x-large;
-           position: absolute;
-          top: 700px;
-          color: white;
-          
-        }
-
-        
-    </style>
 </head>
 <body>
     <header>
@@ -90,8 +15,8 @@ button:hover{
             <ul>
                 <li><a href="cofee.html">Home</a></li>
                 <li><a href="#about">About</a></li> 
-                <li><a href="menu">Menu</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+               
             </ul>
         </nav>
 <br>
@@ -110,14 +35,8 @@ button:hover{
         Notre mission est de fournir le meilleur café de qualité dans une atmosphère conviviale.
         <br><br><mark>Rejoignez-nous pour une tasse et découvrez la différence !</p></mark>
     </div>
-    <script>
-        document.getElementById("orderCoffeeBtn").addEventListener("click", function() {
-    window.location.href = "order.html"; 
-});
-
-document.getElementById("contactus").addEventListener("click", function() {
-    window.location.href = "contact.html"; 
-});
+    <script  src="cofee.js">
+   
     </script>
 
 </body>

@@ -1,0 +1,73 @@
+body {
+    background-image: url('coo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height:200vh; 
+    margin: 0; 
+    color: #fff; 
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 80px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd; 
+}
+
+.fa-coffee {
+    font-size: 24px; 
+    color: #fff; 
+}
+p{
+    text-align: center;
+    position: relative;
+   top: 200px;
+   right: 800px;
+   font-size: x-large;
+   
+}
+button{
+    font-size: large;
+    transition: transform 0.6s ease;
+    
+}
+button:hover{
+    transform: scale(1.1); 
+    background-color: bisque;
+    
+}
+.about-section h1{
+            margin: 0; 
+            font-size: 32px; 
+        }
+.about-section p{
+            font-style: oblique;
+            font-size: x-large;
+           position: absolute;
+          top: 700px;
+          color: white;
+          
+        }

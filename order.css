@@ -1,0 +1,78 @@
+body {
+    background-image: url("timecoffe.jpg");
+    background-repeat: no-repeat;
+    background-size: 1399px;
+}
+img {
+    background-repeat: no-repeat;
+    width: 150px;
+    position: absolute;
+    left: 750px;
+    top: 230px;
+    transition: transform 0.3s ease;
+    
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(121, 70, 30);
+    text-align: center;
+    background-color: bisque;
+    transition: transform 0.6s ease;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:right;
+    transition: transform 0.7s ease;
+}
+h1:hover, h2:hover {
+transform: scale(1.1); 
+}
+label:hover, select:hover {
+transform: scale(1.1); 
+}
+form {
+ text-align: right;
+    width: 50;
+}
+label {
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    transition: transform 0.7s ease;
+}
+button:hover {
+    background-color: bisque;
+    font-size: large;
+}
+select {
+    width: 220px; 
+    height: 40px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px;
+    border-radius: 45px;
+    transition: transform 0.7s ease;
+}
+input {
+    width: 220px; 
+    height: 40px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    border-radius: 45px;
+}
+
+.message-confirmation {
+    font-family: 'Verdana', sans-serif;
+    color: #4b3621;
+    background-color: #f8e3c3; 
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px solid #b78d5a;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
